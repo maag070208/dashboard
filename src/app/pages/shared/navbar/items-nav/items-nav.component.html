@@ -1,0 +1,4 @@
+<span *ngFor="let i of items" #sidenav [ngStyle]="{'display': width <= 768 ? 'none' : ''}">
+  <button routerLinkActive="active" mat-button class="btn-primary" [routerLink]="i.link" >{{i.name}}</button>
+  <span class="example-spacer"></span>
+</span>

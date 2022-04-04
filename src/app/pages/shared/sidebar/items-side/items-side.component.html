@@ -1,0 +1,7 @@
+<div *ngFor="let i of items">
+  <button mat-button class="menu-button" [routerLink]="i.link">
+    <mat-icon> {{ i.icon }} </mat-icon>
+    <span> {{ i.name }} </span>
+  </button>
+  <mat-divider *ngIf="i.divider"></mat-divider>
+</div>

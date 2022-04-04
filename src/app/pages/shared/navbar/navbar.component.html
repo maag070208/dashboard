@@ -1,0 +1,11 @@
+<mat-toolbar class="mat-elevation-z8 navbar navbar-default">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+  <app-items-nav class="navbar-right"></app-items-nav>
+</mat-toolbar>

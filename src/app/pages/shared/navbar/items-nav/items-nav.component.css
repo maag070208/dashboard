@@ -1,0 +1,9 @@
+.example-spacer {
+  flex: 1 1 auto;
+  margin-left: 5%;
+}
+::ng-deep :host() .btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #fbfbfb00;
+  border-bottom: 4px solid white;
+}

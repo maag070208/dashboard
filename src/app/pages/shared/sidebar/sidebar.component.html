@@ -1,0 +1,27 @@
+<app-navbar [sidenav]="sidenav"></app-navbar>
+
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img
+      class="avatar mat-elevation-z8"
+      src="https://avatars.githubusercontent.com/u/48636949?v=4"
+    />
+
+    <h4 class="name">Asael Amaro</h4>
+
+    <p class="designation">Software Engineer</p>
+
+    <mat-divider></mat-divider>
+
+    <app-items-side></app-items-side>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
